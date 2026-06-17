@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
+//https://astro.build/config
 //export default defineConfig({
   //site: 'https://astrofy-template.netlify.app',
   //integrations: [mdx(), sitemap(), tailwind()]
@@ -11,4 +11,5 @@ import tailwind from "@astrojs/tailwind";
   export default defineConfig({
   site: 'https://AlejandraZea.github.io',
   base: '/AstroCV',
+  integrations: [mdx(), sitemap(), tailwind()]
 });
