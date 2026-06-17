@@ -11,6 +11,9 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "overrides": {
+    "sitemap": "8.0.0"
+  },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
     "@astrojs/rss": "^3.0.0",
