@@ -2,20 +2,26 @@
 import SideBarFooter from "./SideBarFooter.astro";
 import { Image } from "astro:assets";
 import SideBarMenu from "./SideBarMenu.astro";
+import profileImage from "../../public/profile-new.png";
 const { sideBarActiveItemID } = Astro.props;
+const homeUrl = import.meta.env.BASE_URL;
 ---
 
 <div class="drawer-side z-40">
   <label for="my-drawer" class="drawer-overlay"></label>
-  <aside class="px-2 pt-2 h-auto min-h-full w-[19rem] bg-base-200 text-base-content flex flex-col">
-    <div class="w-fit mx-auto mt-5 mb-6">
-      <a href="/">
+  <aside class="h-auto min-h-full w-[19rem] border-r border-slate-200 bg-white/95 px-4 pt-4 text-slate-800 shadow-xl shadow-slate-200/50 backdrop-blur flex flex-col">
+    <div class="w-fit mx-auto mt-5 mb-5">
+      <a href={homeUrl}>
         <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
-          <div class="w-[8.5rem]">
-            <Image class="mask mask-circle" format="webp" width={300} height={300} src="/profile.jpg" alt="Profile image" />
+          <div class="w-[8.5rem] rounded-[2rem] bg-gradient-to-br from-yellow-300 to-rose-300 p-1 shadow-lg">
+            <Image class="aspect-square rounded-[1.7rem] object-cover object-[50%_34%]" format="webp" width={300} height={300} src={profileImage} alt="Alejandra De la Cruz Zea profile photo" />
           </div>
         </div>
       </a>
+    </div>
+    <div class="mb-5 text-center">
+      <p class="text-lg font-black leading-tight text-slate-950">Karla Alejandra De la Cruz Zea</p>
+      <p class="mt-1 text-sm font-semibold text-amber-700">QA Engineer</p>
     </div>
     <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
     <SideBarFooter />

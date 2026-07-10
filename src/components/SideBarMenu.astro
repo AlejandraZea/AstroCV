@@ -1,21 +1,15 @@
 ---
 const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-base-300"; // For primary color replace with `active` class
+const activeClass = "bg-slate-950 text-white shadow-md shadow-slate-200";
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
-<ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <li><a class="py-3 text-base" id="projects" href="/#education">Education</a></li>
-    <li><a class="py-3 text-base" id="services" href="/#experience">Experience</a></li>
-    <li><a class="py-3 text-base" id="store" href="/#skills">Skills</a></li>
-    <li>
-        <a
-            class="py-3 text-base"
-            href="mailto:alejandra.d.zea@gmail.com"
-            target="_blank"
-            referrerpolicy="no-referrer-when-downgrade">Contact</a
-        >
-    </li>
+<ul class="menu grow shrink menu-md gap-1 overflow-y-auto">
+    <li><a class="rounded-2xl py-3 text-base font-semibold text-slate-700 hover:bg-amber-100" id="home" href={baseUrl}>Home</a></li>
+    <li><a class="rounded-2xl py-3 text-base font-semibold text-slate-700 hover:bg-amber-100" id="projects" href={`${baseUrl}#education`}>Education</a></li>
+    <li><a class="rounded-2xl py-3 text-base font-semibold text-slate-700 hover:bg-amber-100" id="services" href={`${baseUrl}#experience`}>Experience</a></li>
+    <li><a class="rounded-2xl py-3 text-base font-semibold text-slate-700 hover:bg-amber-100" id="store" href={`${baseUrl}#skills`}>Skills</a></li>
+    <li><a class="rounded-2xl py-3 text-base font-semibold text-slate-700 hover:bg-amber-100" id="contact-link" href={`${baseUrl}#contact`}>Contact</a></li>
 </ul>
 
 <script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>

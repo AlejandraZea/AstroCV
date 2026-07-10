@@ -1,3 +1,120 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.hero-panel {
+    isolation: isolate;
+}
+
+.section-block {
+    margin-top: 3.5rem;
+}
+
+.section-heading {
+    margin-bottom: 1.25rem;
+}
+
+.section-heading p {
+    color: rgb(181, 85, 14, 1);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    color: rgb(15 23 42);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.skill-card {
+    border: 1px solid rgb(226 232 240);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    display: flex;
+    min-height: 5.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.skill-card:hover {
+    border-color: rgba(181, 85, 14, 1);
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+    transform: translateY(-2px);
+}
+
+.skill-card span {
+    color: rgb(100 116 139);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.skill-card strong {
+    color: rgb(15 23 42);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.contact-row {
+    align-items: center;
+    background: rgb(248 250 252);
+    border: 1px solid rgb(226 232 240);
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    min-height: 4.5rem;
+    padding: 1rem;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+a.contact-row:hover {
+    border-color: rgb(181, 85, 14, 1);
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+    transform: translateY(-2px);
+}
+
+.contact-row span {
+    color: rgb(100 116 139);
+    flex: 0 0 auto;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.contact-row strong {
+    color: rgb(15 23 42);
+    font-size: 1rem;
+    font-weight: 900;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: right;
+}
+
+@media (max-width: 520px) {
+    .contact-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .contact-row strong {
+        text-align: left;
+    }
+}
