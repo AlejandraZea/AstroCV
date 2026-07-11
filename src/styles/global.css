@@ -51,7 +51,7 @@ body {
 }
 
 .skill-card:hover {
-    border-color: rgba(181, 85, 14, 1);
+    border-color: rgb(252, 228, 203);
     box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
     transform: translateY(-2px);
 }
