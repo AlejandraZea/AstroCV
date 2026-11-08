@@ -4,42 +4,62 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import heroImage from "../../public/isometric.jpg";
 
 const highlights = [
-  { value: "2+", label: "years in software QA" },
-  { value: "CI/CD", label: "deployment validation" },
-  { value: "12+", label: "tools and technologies" },
+  { value: "3 years", label: "experience in software QA" },
+  { value: "Web", label: "application testing" },
+  { value: "QA", label: "release validation" },
 ];
 
 const focusAreas = [
+  "Manual testing",
   "Regression testing",
-  "Release candidates",
-  "Azure DevOps",
-  "Playwright automation",
+  "Release validation",
+  "Playwright (learning)",
 ];
 
-const skills = [
-  { name: "Manual Testing", type: "Testing" },
-  { name: "Functional, Regression, Exploratory Testing", type: "Testing" },
-  { name: "API Testing", type: "Testing" },
-  { name: "Test Case Design & Execution", type: "Testing" },
-  { name: "Bug Reporting & Tracking", type: "Testing" },
-  { name: "Release Validation", type: "Testing" },
-  { name: "Risk Analysis & Edge Case Identification", type: "Testing" },
-  { name: "JUnit", type: "Automation" },
-  { name: "Selenium with Java", type: "Automation" },
-  { name: "Playwright", type: "Automation" },
-  { name: "Postman", type: "API Testing" },
-  { name: "Azure DevOps", type: "Workflow" },
-  { name: "CI/CD Pipelines", type: "Workflow" },
-  { name: "Scrum", type: "Agile" },
-  { name: "Kanban", type: "Agile" },
-  { name: "Git", type: "Workflow" },
-  { name: "MySQL", type: "Data" },
-  { name: "Java", type: "Code" },
-  { name: "JavaScript", type: "Code" },
-  { name: "HTML", type: "Frontend" },
-  { name: "CSS", type: "Frontend" },
-  { name: "Laravel", type: "Framework" },
-  { name: "WordPress", type: "CMS" },
+const skillGroups = [
+  {
+    title: "Quality Assurance",
+    skills: [
+      "Manual Testing",
+      "Functional Testing",
+      "Regression Testing",
+      "Exploratory Testing",
+      "Test Case Design & Execution",
+      "Defect Reporting & Tracking",
+      "Release Candidate Validation",
+      "Cross-browser & Responsive Testing",
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
+      "Git & GitHub",
+      "GitHub Issues",
+      "Azure DevOps",
+      "Postman (basic API testing)",
+      "Honeycomb",
+      "Monetate",
+      "Azure Diagnostic Logs",
+    ],
+  },
+  {
+    title: "Automation & Development",
+    skills: [
+      "Playwright (currently learning)",
+      "Selenium with Java (basic)",
+      "JUnit",
+      "Java (basic)",
+      "JavaScript",
+      "HTML & CSS",
+      "MySQL (basic queries)",
+      "Laravel",
+      "WordPress",
+    ],
+  },
+  {
+    title: "Ways of Working",
+    skills: ["Kanban", "Scrum", "SDLC", "Cross-functional collaboration"],
+  },
 ];
 ---
 
@@ -47,68 +67,25 @@ const skills = [
   <section
     class="hero-panel relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white shadow-xl shadow-slate-200/60"
   >
-    <div
-      class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-yellow-400 to-rose-400"
-    >
-    </div>
-    <!-- start of hero section -->
+    <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-yellow-400 to-rose-400"></div>
     <div class="grid min-w-0 gap-8 p-6 sm:p-12">
-      <div class="flex min-w-0 flex-col justify-center w-full">
-        <p
-          class="mb-4 inline-flex w-fit max-w-full items-center rounded-full border border-rose-200 px-3 py-1 text-sm font-semibold leading-6 text-amber-700"
-        >
-          QA Engineer - Chihuahua, Mexico
+      <div class="flex w-full min-w-0 flex-col justify-center">
+        <p class="mb-4 inline-flex w-fit max-w-full items-center rounded-full border border-rose-200 px-3 py-1 text-sm font-semibold leading-6 text-amber-700">
+          QA Engineer · Chihuahua, Mexico
         </p>
 
-        <h1
-          class="w-full break-words text-[2.35rem] font-black leading-[1.08] tracking-normal text-slate-950 sm:text-5xl"
-        >
-          Hero
+        <h1 class="w-full break-words text-[2.35rem] font-black leading-[1.08] tracking-normal text-slate-950 sm:text-5xl">
+          Alejandra De la Cruz Zea
         </h1>
 
-        <p class="mt-4 w-full text-lg leading-8 text-slate-600 text-left">
-          Ensuring reliable releases through quality-focused testing and
-          continuous improvement.
+        <p class="mt-4 w-full text-lg font-semibold leading-8 text-slate-700 text-left">
+          Manual Testing · Functional & Regression Testing · Release Validation
         </p>
 
-        <p class="mt-4 w-full text-lg leading-8 text-slate-600 text-left">
-          2+ years of experience validating web applications, collaborating with
-          development teams, and preventing production issues through effective
-          testing strategies. Currently transitioning into test automation with
-          Playwright and Selenium.
-        </p>
-      </div>
-    </div>
-    <!-- end of hero section -->
-  </section>
-
-  <section>
-    <!-- start of About me section -->
-    <div
-      class="grid min-w-0 gap-8 p-6 sm:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:p-10"
-    >
-      <div class="flex min-w-0 flex-col justify-center">
-        <h1
-          class="max-w-3xl break-words text-[2.35rem] font-black leading-[1.08] tracking-normal text-slate-950 sm:text-5xl"
-        >
-          About me
-        </h1>
-        <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 text-left">
-          QA Engineer with 2 years of hands-on experience in manual testing,
-          focused on delivering high-quality software and improving release
-          confidence.
-        </p>
-        <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 text-left">
-          I have worked closely with development teams validating feature
-          branches, executing regression testing, and supporting release
-          candidates in fast-paced environments. My approach to QA goes beyond
-          finding bugs. I focus on understanding risks, improving processes, and
-          preventing issues before they reach production.
-        </p>
-        <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 text-left">
-          Currently, I am expanding my skill set into test automation using
-          Playwright and Selenium, aiming to build scalable and maintainable
-          automated testing solutions.
+        <p class="mt-3 max-w-3xl text-lg leading-8 text-slate-600 text-left">
+          QA Engineer with 3 years of experience in software quality assurance.
+          Focused on validating web applications, identifying defects, and
+          supporting reliable software releases through structured manual testing.
         </p>
 
         <div class="mt-7 flex min-w-0 flex-wrap gap-3">
@@ -122,6 +99,7 @@ const skills = [
             class="btn btn-outline min-h-0 rounded-full border-amber-300 px-5 text-slate-800 hover:border-amber-300 hover:bg-amber-500 hover:text-white"
             href="https://www.linkedin.com/in/alejandra-de-la-cruz-zea-33751166/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
@@ -129,18 +107,43 @@ const skills = [
             class="btn btn-ghost min-h-0 rounded-full px-5 text-slate-700 hover:bg-amber-200"
             href="https://github.com/AlejandraZea"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="grid min-w-0 gap-8 p-6 sm:p-8 lg:grid-cols-[1.15fr_0.85fr] lg:p-10">
+      <div class="flex min-w-0 flex-col justify-center">
+        <h2 class="max-w-3xl break-words text-[2.35rem] font-black leading-[1.08] tracking-normal text-slate-950 sm:text-5xl">
+          About me
+        </h2>
+        <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 text-left">
+          I’m a QA Engineer with hands-on experience in manual testing,
+          regression testing, and release validation for web applications.
+        </p>
+        <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 text-left">
+          In my previous role, I worked closely with developers and product
+          teams to validate new features, test staging and production
+          environments, verify fixes, and support release candidates. I also
+          used GitHub Issues and Azure DevOps to follow up on defects and
+          coordinate work throughout the development cycle.
+        </p>
+        <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600 text-left">
+          I value clear communication, attention to detail, and understanding
+          how a change can affect the overall product. I’m currently
+          strengthening my test automation skills with Playwright.
+        </p>
 
         <div class="mt-8 grid gap-3 sm:grid-cols-3">
           {
             highlights.map((item) => (
               <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                <div class="text-3xl font-black text-slate-950">
-                  {item.value}
-                </div>
+                <div class="text-2xl font-black text-slate-950">{item.value}</div>
                 <div class="mt-1 text-sm font-medium leading-5 text-slate-500">
                   {item.label}
                 </div>
@@ -150,30 +153,18 @@ const skills = [
         </div>
       </div>
 
-      <div
-        class="relative min-h-[420px] min-w-0 overflow-hidden rounded-[1.5rem] bg-slate-950 text-white"
-      >
+      <div class="relative min-h-[420px] min-w-0 overflow-hidden rounded-[1.5rem] bg-slate-950 text-white">
         <img
           src={heroImage.src}
-          alt="Sunlit fantasy ruins surrounded by flowers"
+          alt="Illustrated landscape"
           class="absolute inset-0 h-full w-full object-cover object-center opacity-90"
         />
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-slate-950/5"
-        >
-        </div>
-        <div
-          class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.34),transparent_16rem)]"
-        >
-        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-slate-950/5"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.34),transparent_16rem)]"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6">
-          <div
-            class="mb-4 rounded-2xl border border-white/15 bg-white/10 p-4 shadow-2xl backdrop-blur"
-          >
-            <p
-              class="text-sm font-semibold uppercase tracking-[0.18em] text-amber-300 text-center"
-            >
-              Current focus
+          <div class="mb-4 rounded-2xl border border-white/15 bg-white/10 p-4 shadow-2xl backdrop-blur">
+            <p class="text-center text-sm font-semibold uppercase tracking-[0.18em] text-amber-300">
+              Areas of focus
             </p>
             <div class="mt-3 grid grid-cols-2 gap-2">
               {
@@ -186,8 +177,8 @@ const skills = [
             </div>
           </div>
           <p class="text-sm leading-6 text-slate-200 text-left">
-            Focused on release confidence, regression prevention, and automation
-            practices that help teams move faster.
+            Helping teams deliver stable features through thoughtful testing,
+            clear defect reports, and careful release checks.
           </p>
         </div>
       </div>
@@ -201,19 +192,14 @@ const skills = [
     </div>
 
     <div class="time-line-container grid gap-5">
-      <TimeLineElement
-        title="Software Development and Project Management Engineering Graduate"
-      >
+      <TimeLineElement title="Engineering in Software Development and Management">
         <span class="text-sm font-semibold text-slate-500">
-          2024 to 2026 - Universidad Tecnologica de Chihuahua, Chihuahua,
-          Mexico. Degree process scheduled for September 2026.
+          Universidad Tecnológica de Chihuahua · Graduated August 2026
         </span>
       </TimeLineElement>
-      <TimeLineElement
-        title="TSU Information Technology - Multiplatform Software Development"
-      >
+      <TimeLineElement title="Higher University Technician (TSU) in Multiplatform Software Development">
         <span class="text-sm font-semibold text-slate-500">
-          2021 to 2024 - Universidad Tecnologica de Chihuahua, Chihuahua, Mexico
+          Universidad Tecnológica de Chihuahua · Graduated 2024
         </span>
       </TimeLineElement>
     </div>
@@ -226,24 +212,54 @@ const skills = [
     </div>
 
     <div class="time-line-container grid gap-5">
-      <TimeLineElement title="QA Engineer" subtitle="1A Auto - 2+">
-        <p>Executed manual testing across multiple features and releases, ensuring product stability and functionality.</p>
-        <p class="mt-2">Performed regression testing before releases, improving confidence in production deployments.</p>
-        <p class="mt-2">Validated feature branches and release candidates in collaboration with developers.</p>
-        <p class="mt-2">Identified, documented, and tracked bugs, contributing to improved product quality.</p>
-        <p class="mt-2">Participated in Agile workflows (Scrum and Kanban), supporting continuous delivery.</p>
-        <p class="mt-2">Communicated effectively with cross-functional teams to clarify requirements and resolve issues.</p>
-        <p class="mt-4"><b>Tech stack: Azure DevOps, JUnit, Java, JavaScript, Playwright with AI Assistant.</b></p>
+      <TimeLineElement title="QA Engineer" subtitle="1A Auto · August 2023 – August 2026">
+        <p>
+          Performed functional, exploratory, and regression testing for web
+          application features, checking that new changes did not affect
+          existing functionality.
+        </p>
+        <p class="mt-2">
+          Validated features and fixes in staging and production environments,
+          documented defects, and followed up with developers until resolution.
+        </p>
+        <p class="mt-2">
+          Supported release preparation by validating release candidates and
+          coordinating changes through the team's Git and release workflow.
+        </p>
+        <p class="mt-2">
+          Created and tracked bugs, tasks, and feature tickets in GitHub Issues,
+          using labels and release milestones to follow progress.
+        </p>
+        <p class="mt-2">
+          Worked with Azure DevOps, diagnostic logs, Honeycomb dashboards, and
+          Monetate to support investigation and validation of application behavior.
+        </p>
+        <p class="mt-2">
+          Participated in a Bootstrap 5 migration, checking interface behavior
+          and responsive components such as dropdowns, modals, tabs, search
+          filters, and mobile navigation.
+        </p>
+        <p class="mt-4">
+          <b>Tools:</b> Git, GitHub Issues, Azure DevOps, Postman, Honeycomb,
+          Monetate, Bootstrap.
+        </p>
       </TimeLineElement>
 
-      <TimeLineElement title="QA Manual Tester" subtitle="Intelectix">
-        <p>Manual testing and API testing.</p>
-        <p class="mt-2"><b>Tech stack: MySQL, C#, and .NET.</b></p>
+      <TimeLineElement title="QA Intern" subtitle="Intelectix · June 2023 – August 2023">
+        <p>
+          Supported manual testing, test execution, defect reporting, and
+          follow-up. Also performed basic API checks using Postman.
+        </p>
       </TimeLineElement>
 
-      <TimeLineElement title="Web Designer" subtitle="Anchondo Sistemas">
-        <p>Web design and manual testing for production websites.</p>
-        <p class="mt-2"><b>Tech stack: MySQL, Laravel, WordPress.</b></p>
+      <TimeLineElement title="Web Designer" subtitle="Anchondo Sistemas · 2020 – 2023">
+        <p>
+          Worked on web design and website implementation, including visual
+          and responsive interface checks.
+        </p>
+        <p class="mt-2">
+          <b>Technologies:</b> HTML, CSS, MySQL, Laravel, and WordPress.
+        </p>
       </TimeLineElement>
     </div>
   </section>
@@ -254,45 +270,46 @@ const skills = [
       <h2>Skills</h2>
     </div>
 
-    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-5 sm:grid-cols-2">
       {
-        skills.map((skill) => (
-          <div class="skill-card">
-            <span>{skill.type}</span>
-            <strong>{skill.name}</strong>
+        skillGroups.map((group) => (
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="mb-4 text-lg font-bold text-slate-900">{group.title}</h3>
+            <div class="flex flex-wrap gap-2">
+              {group.skills.map((skill) => (
+                <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-700">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         ))
       }
     </div>
   </section>
-  <!-- end of skills section -->
 
-  <!-- start of contact section -->
   <section class="section-block" id="contact">
     <div class="section-heading">
       <p>Let's talk</p>
       <h2>Contact</h2>
     </div>
 
-    <div
-      class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/60"
-    >
+    <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
       <div class="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
-        <div
-          class="relative overflow-hidden p-6 text-white sm:p-8 bg-cover bg-center bg-no-repeat"
-          style="background-image: url('/AstroCV/stray_game.gif');"
-        >
-          <div class="absolute inset-0 bg-slate-950/80 -z-10"></div>
-
-          <div class="relative z-10 justify-center text-center " style="padding-top: 40px;">
+        <div class="relative overflow-hidden bg-slate-900 p-6 text-white sm:p-8">
+          <div class="relative z-10 flex min-h-full flex-col items-center justify-center py-8 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-amber-300">
+              Get in touch
+            </p>
             <h3 class="mt-4 text-3xl font-black leading-tight">
-              The fastest way to reach me is via email.
+              Let's build better software together.
             </h3>
             <p class="mt-4 leading-7 text-slate-300">
-              I’m also available through LinkedIn for professional opportunities.
+              Feel free to reach out about QA opportunities or professional
+              collaborations.
             </p>
             <a
-              class="btn mt-6 inline-flex items-center min-h-0 rounded-full border-0 bg-white px-5 py-2 text-slate-950 hover:bg-amber-100"
+              class="btn mt-6 inline-flex min-h-0 items-center rounded-full border-0 bg-white px-5 py-2 text-slate-950 hover:bg-amber-100"
               href="mailto:alejandra.d.zea@gmail.com"
             >
               Email me
@@ -309,6 +326,7 @@ const skills = [
             class="contact-row"
             href="https://www.linkedin.com/in/alejandra-de-la-cruz-zea-33751166/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span>LinkedIn</span>
             <strong>alejandra-de-la-cruz-zea</strong>
@@ -317,6 +335,7 @@ const skills = [
             class="contact-row"
             href="https://github.com/AlejandraZea"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span>GitHub</span>
             <strong>AlejandraZea</strong>
